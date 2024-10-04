@@ -84,6 +84,19 @@ hr {
   margin: 12px 0px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #717171;
+}
+
 .logo {
   display: flex;
   gap: 6px;
@@ -176,6 +189,7 @@ hr {
   grid-area: sidebar;
   background-color: #121212;
   padding-top: 10px;
+  overflow-y: scroll;
 
 }
 
