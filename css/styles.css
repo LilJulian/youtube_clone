@@ -221,3 +221,36 @@ hr {
 .container {
   grid-area: container;
 }
+
+.chip-warpper {
+  max-width: calc(100vw - 240px);
+  overflow-x: scroll;
+  background-color: #181818;
+  display: flex;
+  padding-left: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chips {
+  margin: 12px 6px;
+  background-color: #373737;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.chips:hover {
+  background-color: #d4d4d4;
+}
+
+.chip-warpper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.chip-warpper:hover::-webkit-scrollbar-thumb {
+  background: #717171;
+}
