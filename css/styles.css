@@ -8,10 +8,24 @@
   font-family: "Roboto", sans-serif;
 }
 
+
+:root{
+  --colorPalabras: #fff;
+  --porc100: 100%;
+  --cero: 0;
+  --relativa: relative;
+  --hover_fondoNegro: #373737;
+  --grid: grid;
+  --flex: flex;
+  --nada: none;
+  --colorcanal: #aaa;
+  --bordergba: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Layout */
 
 body {
-  display: grid;
+  display: var(--grid);
   grid-template-columns: 240px 1fr;
   grid-template-rows: 56px 1fr;
   grid-template-areas:
@@ -21,52 +35,51 @@ body {
 }
 
 .header {
-  display: flex;
+  display: var(--flex);
   grid-area: header;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: var(--cero);
+  left: var(--cero);
+  width: var(--porc100);
   height: 56px;
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 0 10px;
   gap: 6px;
 }
 
 
 .logo-container {
-  display: flex;
+  display: var(--flex);
   align-items: center;
   gap: 6px;
 }
 
 img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: var(--cero);
+  left: var(--cero);
+  width: var(--porc100);
+  height: var(--porc100);
   object-fit: contain;
 
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: var(--nada);
+  color: var(--colorPalabras);
   font-size: 0.9rem;
 }
 
 h1 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--colorPalabras);
 }
 
 h4 {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--colorcanal);
   margin-left: 20px;
   text-transform: uppercase;
 }
@@ -81,7 +94,7 @@ a {
 }
 
 hr {
-  border: solid 1px rgba(255, 255, 255, 0.1);
+  border: var(--bordergba);
   margin: 12px 0px;
 }
 
@@ -99,33 +112,33 @@ hr {
 }
 
 .logo {
-  display: flex;
+  display: var(--flex);
   gap: 6px;
   letter-spacing: -1px;
   position: relative;
 }
 
 .logo-img {
-  position: relative;
+  position: var(--relativa);
   width: 30px;
   height: 25px;
 }
 
 .search-container form {
-  position: relative;
+  position: var(--relativa);
   width: 100%;
-  display: flex;
+  display: var(--flex);
 }
 
 .search-container input {
-  display: flex;
+  display: var(--flex);
   height: 40px;
-  width: 100%;
+  width: var(--porc100);
   background-color: #121212;
   color: #f2f2f2;
   padding: 12px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: var(--bordergba);
   border-radius: 10px 0 0 10px;
 }
 
@@ -135,8 +148,8 @@ hr {
   height: 40px;
   background-color: #313131;
   color: #f2f2f2;
-  outline: none;
-  border: none;
+  outline: var(--nada);
+  border: var(--nada);
   border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
@@ -148,20 +161,20 @@ hr {
 }
 
 .search-container {
-  display: flex;
+  display: var(--flex);
   gap: 6px;
   flex: 0 1 650px;
 
 }
 
 .profile-container {
-  display: flex;
+  display: var(--flex);
   align-items: center;
   gap: 25px;
 }
 
 .profile-box {
-  position: relative;
+  position: var(--relativa);
   width: 30px;
   height: 30px;
 
@@ -176,7 +189,7 @@ hr {
   min-width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
+  display: var(--flex);
   align-items: center;
   justify-content: center;
 
@@ -195,7 +208,7 @@ hr {
 }
 
 .sidebar-items {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   padding: 0px 14px;
 
@@ -203,7 +216,7 @@ hr {
 
 .sidebar-item {
   height: 40px;
-  display: flex;
+  display: var(--flex);
   align-items: center;
   border-radius: 10px;
   transition: 0.3s;
@@ -227,17 +240,17 @@ hr {
   max-width: calc(100vw - 240px);
   overflow-x: scroll;
   background-color: #181818;
-  display: flex;
+  display: var(--flex);
   padding-left: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: var(--bordergba);
+  border-bottom: var(--bordergba);
 }
 
 .chips {
   margin: 12px 6px;
-  background-color: #373737;
+  background-color: var(--hover_fondoNegro);
   padding: 6px 12px;
-  color: #fff;
+  color: var(--colorPalabras);
   cursor: pointer;
   border-radius: 16px;
   white-space: nowrap;
@@ -257,40 +270,40 @@ hr {
 }
 
 .video-container {
-  display: grid;
+  display: var(--grid);
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: max-content;
   gap: 18px;
   padding: 20px;
   background-color: #181818;
   overflow-y: scroll;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 118px);
 }
 
 .video-container:hover::-webkit-scrollbar-thumb {
-  background-color: #373737;
+  background-color: var(--hover_fondoNegro);
 }
 
 .video-container-cover {
-  position: relative;
+  position: var(--relativa);
   transition: 0.5s;
 }
 
 .video-content {
   margin-bottom: 25px;
-  position: relative;
-  width: 100%;
+  position: var(--relativa);
+  width: var(--porc100);
   padding: 8px;
   border-radius: 12px;
   transition: 1s;
 }
 
 .video-content:hover {
-  background-color: #373737;
+  background-color: var(--hover_fondoNegro);
 }
 
 .video-box {
-  position: relative;
+  position: var(--relativa);
   width: auto;
   height: 145px;
   display: block;
@@ -302,13 +315,13 @@ hr {
 }
 
 .video-detail {
-  display: flex;
-  color: #fff;
+  display: var(--flex);
+  color: var(--colorPalabras);
   padding-top: 12px;
 }
 
 .chanel-logo {
-  position: relative;
+  position: var(--relativa);
   min-width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -326,14 +339,14 @@ hr {
 .chanel-name {
   font-size: 0.8rem;
   margin-top: 10px;
-  color: #aaa;
+  color: var(--colorcanal);
 }
 
 .views-upload {
-  display: flex;
+  display: var(--flex);
   font-size: 0.8rem;
   margin-top: 4px;
-  color: #aaa;
+  color: var(--colorcanal);
   gap: 10px;
 }
 
@@ -344,15 +357,15 @@ hr {
 
   .sidebar-items span,
   .sidebar-items h4 {
-    display: none;
+    display: var(--nada);
   }
 
   .sidebar-items {
-    padding: 0;
+    padding: var(--cero);
   }
 
   .sidebar-item {
-    padding: 0 20px;
+    padding: var(--cero) 20px;
   }
 
   .chip-warpper {
@@ -362,6 +375,6 @@ hr {
 
 @media(max-width:800px) {
   .search-container {
-    display: none;
+    display: var(--nada);
   }
 }
