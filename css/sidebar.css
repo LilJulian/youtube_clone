@@ -1,0 +1,31 @@
+@import url(styles.css);
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #121212;
+    padding-top: 10px;
+    overflow-y: scroll;
+  
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 14px;
+  
+  }
+  
+  .items_iconos {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding-left: 10px;
+  }
+  
+
+  
+  .items_iconos i {
+    margin-right: 20px;
+  }

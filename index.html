@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/sidebar.css">
   <title>Youtube</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header flex-contenedor">
     <!-- Contenedor logo -->
-    <div class="youtube">
+    <div class="youtube  flex-contenedor">
       <a href="#"><i class="ri-menu-line"></i></a>
       <div class="youtube_logo">
         <div class="youtube_img">
@@ -32,7 +36,7 @@
       </button>
     </div>
     <!-- Contenedor perfil -->
-    <div class="perfil">
+    <div class="perfil flex-contenedor">
       <a href="#">
         <i class="ri-video-add-line iconos"></i>
       </a>
@@ -53,27 +57,28 @@
       <a href="#" class="items_iconos"><i class="ri-wireless-charging-line"></i><span>Short</span></a>
       <a href="#" class="items_iconos"><i class="ri-rss-line"></i><span>Susbcripciones</span></a>
       <hr>
-      <a href="" class="items_iconos"><i class="ri-links-line"></i><span>Library</span></a>
-      <a href="" class="items_iconos"><i class="ri-history-line"></i><span>History</span></a>
-      <a href="" class="items_iconos"><i class="ri-video-line"></i><span>Your videos</span></a>
-      <a href="" class="items_iconos"><i class="ri-time-line"></i><span>Watch videos</span></a>
-      <a href="" class="items_iconos"><i class="ri-play-list-2-line"></i><span>ALL videos</span></a>
-      <a href="" class="items_iconos"><i class="ri-arrow-down-line"></i><span>Show more</span></a>
+      <a href="#" class="items_iconos"><i class="ri-links-line"></i><span>Library</span></a>
+      <a href="#" class="items_iconos"><i class="ri-history-line"></i><span>History</span></a>
+      <a href="#" class="items_iconos"><i class="ri-video-line"></i><span>Your videos</span></a>
+      <a href="#" class="items_iconos"><i class="ri-time-line"></i><span>Watch videos</span></a>
+      <a href="#" class="items_iconos"><i class="ri-play-list-2-line"></i><span>ALL videos</span></a>
+      <a href="#" class="items_iconos"><i class="ri-arrow-down-line"></i><span>Show more</span></a>
       <hr>
       <h4>MORE FROM YOUTUBE</h4>
-      <a href="" class="items_iconos"><i class="ri-keyboard-box-line"></i><span>Gaming</span></a>
-      <a href="" class="items_iconos"><i class="ri-live-line"></i><span>Live</span></a>
-      <a href="" class="items_iconos"><i class="ri-award-line"></i><span>Sports</span></a>
+      <a href="#" class="items_iconos"><i class="ri-keyboard-box-line"></i><span>Gaming</span></a>
+      <a href="#" class="items_iconos"><i class="ri-live-line"></i><span>Live</span></a>
+      <a href="#" class="items_iconos"><i class="ri-award-line"></i><span>Sports</span></a>
       <hr>
-      <a href="" class="items_iconos"><i class="ri-settings-5-line"></i><span>Settings</span></a>
-      <a href="" class="items_iconos"><i class="ri-flag-line"></i><span>Report history</span></a>
-      <a href="" class="items_iconos"><i class="ri-question-line"></i><span>Help</span></a>
-      <a href="" class="items_iconos"><i class="ri-feedback-line"></i><span>Send feedback</span></a>
+      <a href="#" class="items_iconos"><i class="ri-settings-5-line"></i><span>Settings</span></a>
+      <a href="#" class="items_iconos"><i class="ri-flag-line"></i><span>Report history</span></a>
+      <a href="#" class="items_iconos"><i class="ri-question-line"></i><span>Help</span></a>
+      <a href="#" class="items_iconos"><i class="ri-feedback-line"></i><span>Send feedback</span></a>
       <hr>
     </div>
   </aside>
   <!-- Main -->
   <main class="container">
+    <!-- Chips -->
     <div class="chips">
       <div class="chips_tema">
         <p>ALL</p>
@@ -118,6 +123,7 @@
         <p>Mysql</p>
       </div>
     </div>
+    <!-- Contenido de los videos -->
     <div class="videos">
       <div class="videos_cover">
         <div class="videos_contenido">
@@ -382,26 +388,6 @@
       <div class="videos_cover">
         <div class="videos_contenido">
           <a href="#" class="contenido_imagen">
-            <img src="img/img-10.jpg" alt="img 10">
-          </a>
-          <div class="videos_detalles">
-            <div class="detalles_canal">
-              <img src="img/john.jpg" alt="logo">
-            </div>
-            <div class="detalles">
-              <h3 class="detalles_titulo">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="detalles_nombre">Julian Araque</div>
-              <div class="vistas">
-                <div class="vistas_cantidad">28K views</div>
-                <div class="vistas_fecha">1 year ago</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="videos_cover">
-        <div class="videos_contenido">
-          <a href="#" class="contenido_imagen">
             <img src="img/img-14.jpg" alt="img 14">
           </a>
           <div class="videos_detalles">
@@ -442,7 +428,27 @@
       <div class="videos_cover">
         <div class="videos_contenido">
           <a href="#" class="contenido_imagen">
-            <img src="img/img-16.jpg" alt="img 17">
+            <img src="img/img-16.jpg" alt="img 16">
+          </a>
+          <div class="videos_detalles">
+            <div class="detalles_canal">
+              <img src="img/john.jpg" alt="logo">
+            </div>
+            <div class="detalles">
+              <h3 class="detalles_titulo">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="detalles_nombre">Julian Araque</div>
+              <div class="vistas">
+                <div class="vistas_cantidad">28K views</div>
+                <div class="vistas_fecha">1 year ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videos_cover">
+        <div class="videos_contenido">
+          <a href="#" class="contenido_imagen">
+            <img src="img/img-17.jpg" alt="img 17">
           </a>
           <div class="videos_detalles">
             <div class="detalles_canal">
@@ -502,7 +508,47 @@
       <div class="videos_cover">
         <div class="videos_contenido">
           <a href="#" class="contenido_imagen">
-            <img src="img/img-20.jpg" alt="img 0">
+            <img src="img/img-20.jpg" alt="img 20">
+          </a>
+          <div class="videos_detalles">
+            <div class="detalles_canal">
+              <img src="img/john.jpg" alt="logo">
+            </div>
+            <div class="detalles">
+              <h3 class="detalles_titulo">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="detalles_nombre">Julian Araque</div>
+              <div class="vistas">
+                <div class="vistas_cantidad">28K views</div>
+                <div class="vistas_fecha">1 year ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videos_cover">
+        <div class="videos_contenido">
+          <a href="#" class="contenido_imagen">
+            <img src="img/img-21.jpg" alt="img 21">
+          </a>
+          <div class="videos_detalles">
+            <div class="detalles_canal">
+              <img src="img/john.jpg" alt="logo">
+            </div>
+            <div class="detalles">
+              <h3 class="detalles_titulo">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="detalles_nombre">Julian Araque</div>
+              <div class="vistas">
+                <div class="vistas_cantidad">28K views</div>
+                <div class="vistas_fecha">1 year ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videos_cover">
+        <div class="videos_contenido">
+          <a href="#" class="contenido_imagen">
+            <img src="img/img-22.jpg" alt="img 22">
           </a>
           <div class="videos_detalles">
             <div class="detalles_canal">

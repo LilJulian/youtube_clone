@@ -1,0 +1,115 @@
+@import url(styles.css);
+
+.container {
+    grid-area: container;
+  }
+  
+  .chips {
+    max-width: calc(100vw - 240px);
+    overflow-x: scroll;
+    background-color: var(--fondo_oscuro);
+    display: flex;
+    padding-left: 14px;
+    border-top: var(--bordergba);
+    border-bottom: var(--bordergba);
+  }
+  
+  .chips_tema {
+    margin: 12px 6px;
+    background-color: var(--hover_fondo_negro);
+    padding: 6px 12px;
+    color: var(--colorPalabras);
+    cursor: pointer;
+    border-radius: 16px;
+    white-space: nowrap;
+    transition: 0.5s;
+  }
+  
+  .chips_tema:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .chips::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .chips:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+  }
+  
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: max-content;
+    gap: 18px;
+    padding: 20px;
+    background-color: var(--fondo_oscuro);
+    overflow-y: scroll;
+    height: calc(100vh - 118px);
+  }
+  
+  .videos_cover{
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .videos_contenido{
+    margin-bottom: 25px;
+    position: relative;
+    width: var(--porc100);
+    padding: 8px;
+    border-radius: 12px;
+    transition: 1s;
+  }
+  
+  .videos_contenido:hover {
+    background-color: var(--hover_fondo_negro);
+  }
+  
+  .contenido_imagen {
+    position: relative;
+    width: auto;
+    height: 145px;
+    display: block;
+  }
+  
+  .contenido_imagen img {
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .videos_detalles {
+    display: flex;
+    color: var(--colorPalabras);
+    padding-top: 12px;
+  }
+  
+  .detalles_canal {
+    position: relative;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .detalles {
+    margin-left: 12px;
+  }
+  
+  .detalles_titulo {
+    font-size: 0.9rem;
+  }
+  
+  .detalles_nombre {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: var(--colorcanal);
+  }
+  
+  .vistas {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    color: var(--colorcanal);
+    gap: 10px;
+  }
