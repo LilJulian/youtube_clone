@@ -248,7 +248,7 @@ hr {
 
 .chips_tema {
   margin: 12px 6px;
-  background-color: var(--hover_fondoNegro);
+  background-color: var(--hover_fondo_negro);
   padding: 6px 12px;
   color: var(--colorPalabras);
   cursor: pointer;
@@ -269,7 +269,7 @@ hr {
   background: #717171;
 }
 
-.video-container {
+.videos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: max-content;
@@ -280,16 +280,12 @@ hr {
   height: calc(100vh - 118px);
 }
 
-.video-container:hover::-webkit-scrollbar-thumb {
-  background-color: var(--hover_fondoNegro);
-}
-
-.video-container-cover {
+.videos_cover{
   position: relative;
   transition: 0.5s;
 }
 
-.video-content {
+.videos_contenido{
   margin-bottom: 25px;
   position: relative;
   width: var(--porc100);
@@ -298,29 +294,29 @@ hr {
   transition: 1s;
 }
 
-.video-content:hover {
-  background-color: var(--hover_fondoNegro);
+.videos_contenido:hover {
+  background-color: var(--hover_fondo_negro);
 }
 
-.video-box {
+.contenido_imagen {
   position: relative;
   width: auto;
   height: 145px;
   display: block;
 }
 
-.video-box img {
+.contenido_imagen img {
   object-fit: cover;
   border-radius: 12px;
 }
 
-.video-detail {
+.videos_detalles {
   display: flex;
   color: var(--colorPalabras);
   padding-top: 12px;
 }
 
-.chanel-logo {
+.detalles_canal {
   position: relative;
   min-width: 35px;
   height: 35px;
@@ -328,21 +324,21 @@ hr {
   overflow: hidden;
 }
 
-.detail {
+.detalles {
   margin-left: 12px;
 }
 
-.title {
+.detalles_titulo {
   font-size: 0.9rem;
 }
 
-.chanel-name {
+.detalles_nombre {
   font-size: 0.8rem;
   margin-top: 10px;
   color: var(--colorcanal);
 }
 
-.views-upload {
+.vistas {
   display: flex;
   font-size: 0.8rem;
   margin-top: 4px;
